@@ -1,6 +1,6 @@
 import { SquarePyramid } from './squarePyramid.js'; 
-import { Axes } from '../util/util.js';         
-import { Shader, readShaderFile } from '../util/shader.js';
+import { Axes } from './util/util.js';         
+import { Shader, readShaderFile } from './util/shader.js';
 
 const canvas = document.getElementById('glCanvas');
 const gl = canvas.getContext('webgl2');
@@ -8,7 +8,7 @@ const gl = canvas.getContext('webgl2');
 let shader;
 let pyramid = null;
 let axes = null;
-
+   
 // 행렬
 let viewMatrix = mat4.create();
 let projMatrix = mat4.create();
